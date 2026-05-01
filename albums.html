@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Memoir Albums</title>
+  <title>Albums</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin-top: 60px;
+      font-size: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+
 </head>
-<body style="font-family: Arial; text-align:center; margin-top:80px;">
+
+<body>
+
   <h1>Our Albums</h1>
 
-  <p>Wedding Album</p>
-  <p>Family Album</p>
-  <p>Memorial Album</p>
+  <div class="grid">
+    <div class="card">Wedding Album</div>
+    <div class="card">Family Album</div>
+    <div class="card">Memorial Album</div>
+  </div>
 
-  <br>
-  <a href="index.html">Back Home</a>
+  <a href="index.html">← Back Home</a>
+
 </body>
 </html>
