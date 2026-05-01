@@ -5,41 +5,48 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #ffffff;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #111;
     }
 
     h1 {
-      margin-top: 60px;
-      font-size: 40px;
+      text-align: center;
+      margin: 50px 0;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
+      padding: 20px 60px;
     }
 
     .card {
-      border: 1px solid #ddd;
-      padding: 20px;
+      background: #f4f4f4;
+      height: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       border-radius: 10px;
+      font-size: 18px;
+      transition: 0.2s;
     }
 
-    a {
-      display: inline-block;
-      margin-top: 30px;
+    .card:hover {
+      transform: scale(1.03);
+      background: #eaeaea;
+    }
+
+    .back {
+      display: block;
+      text-align: center;
+      margin: 40px;
       text-decoration: none;
       color: black;
     }
   </style>
-
 </head>
 
 <body>
@@ -47,12 +54,13 @@
   <h1>Our Albums</h1>
 
   <div class="grid">
-    <div class="card">Wedding Album</div>
-    <div class="card">Family Album</div>
-    <div class="card">Memorial Album</div>
+    <div class="card">Wedding</div>
+    <div class="card">Family</div>
+    <div class="card">Memorial</div>
+    <div class="card">Travel</div>
   </div>
 
-  <a href="index.html">← Back Home</a>
+  <a class="back" href="index.html">← Back Home</a>
 
 </body>
 </html>
